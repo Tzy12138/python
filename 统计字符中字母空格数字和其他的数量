@@ -1,0 +1,19 @@
+import string
+s = raw_input('输入一个字符串:\n')
+letters = 0
+space = 0
+number = 0
+others = 0
+i=0
+while i < len(s):
+    c = s[i]
+    i += 1
+    if c.isalpha():
+        letters += 1
+    elif c.isspace():
+        space += 1
+    elif c.isdigit():
+        number += 1
+    else:
+        others += 1
+print 'char = %d,space = %d,digit = %d,others = %d' % (letters,space,numbert,others)
